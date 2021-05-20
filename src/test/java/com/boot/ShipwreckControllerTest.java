@@ -1,19 +1,18 @@
 package com.boot;
 
-import static org.junit.Assert.assertEquals;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
-
+import com.boot.controller.ShipwreckController;
+import com.boot.model.Shipwreck;
+import com.boot.repository.ShipwreckRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import static org.mockito.Mockito.*;
 
-import com.boot.controller.ShipwreckController;
-import com.boot.model.Shipwreck;
-import com.boot.repository.ShipwreckRepository;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class ShipwreckControllerTest {
 	@InjectMocks

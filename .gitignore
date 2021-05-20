@@ -1,13 +1,13 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
-
+.idea/
+.idea
 .apt_generated
 .classpath
 .factorypath
 .project
 .settings
 .springbeans
-.idea/
 *.iws
 *.iml
 *.ipr
